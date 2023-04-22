@@ -3,6 +3,7 @@
   add_theme_support( 'menus' );       // メニューの追加
   add_theme_support( 'title-tag' );   // タイトルタグのサポートを許可
   add_theme_support( 'post-thumbnails' ); // アイキャッチをのサポートを追加
+  add_theme_support( ‘automatic-feed-links’ );
 
   //タイトル出力
   function wpbeg_title( $title ) {
