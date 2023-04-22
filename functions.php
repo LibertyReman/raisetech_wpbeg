@@ -64,3 +64,12 @@
   }
   add_action( 'widgets_init', 'wpbeg_widgets_init' );
 
+  // エディタの見た目をプレビューと同じにする
+  function wpbeg_theme_add_editor_styles() {
+    add_editor_style( get_template_directory_uri() . "/css/editor-style.css" );
+  }
+  add_action( 'admin_init', 'wpbeg_theme_add_editor_styles' );
+
+
+
+
